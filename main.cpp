@@ -1,11 +1,4 @@
-/*********************************************************************************************************
-This project proved to be very challenging while also being refreshing. I really enjoyed implementing algorithms
-and allowing them to do much of the heavy lifting rather than having to write a lot of redundant code. I found myself
-mainly struggling with creating and accessing the map within a map. I also spent hours trying to figure out how to
-use _stricmp to organize my map alphabetically case-insensitive. If their is any input you could leave as a note 
-while grading this, I would really appreciate it. I'm eager to learn from my mistakes and improve.
 
-**********************************************************************************************************/
 #include <iostream>
 #include <functional>
 #include <algorithm>
@@ -23,7 +16,7 @@ using namespace std;
 const int MAX_OCCURRENCES = 9;
 struct OrderMap
 {
-	bool operator()(const string& a, const string& b)const //Could not figure out how to get my comparator to work
+	bool operator()(const string& a, const string& b)const 
 	{
 		const char* aTest = a.c_str();
 		const char* bTest = b.c_str();
@@ -33,7 +26,7 @@ struct OrderMap
 		}
 		else
 			
-			return _stricmp(aTest, bTest); //had a lot of difficulty with stricmp and I couldn't figure out how to get it to work
+			return _stricmp(aTest, bTest); 
 			
 	}
 };
